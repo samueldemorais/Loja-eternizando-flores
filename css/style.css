@@ -1,0 +1,337 @@
+     .background-color{
+        background-color: #5C3317;
+      }
+
+
+      main {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-rows: 30vh 10vh auto auto auto 3vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+          "header header header"
+          "nav nav nav"
+          "prod1 prod2 prod3"
+          "prod4 prod5 prod6"
+          "prod7 prod8 prod9"
+          "footer footer footer";   
+        font-family: Lobster, cursive;   
+        font-size: 20px;
+                    
+      }
+
+      @media screen and (max-width: 550px) {
+        main{
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 30vh 10vh auto auto auto auto auto 3vh;
+          grid-template-areas: 
+          "header header"
+          "nav nav"
+          "prod1 prod2"
+          "prod3 prod4" 
+          "prod5 prod6"
+          "prod7 prod8"
+          "prod9 ."
+          "footer footer";
+
+        }
+        
+     }
+     @media screen and (max-width: 550px) {
+       div {
+         text-align: center;
+         color: blue;
+       }
+     } 
+      header {
+        
+        grid-area: header;
+        background-image: url('/img/fundo.jpg');
+        background-repeat: repeat;
+        padding: 30px;
+      }
+
+      footer {
+        grid-area: footer;
+        padding: 5px; 
+        text-align: center;      
+      }
+
+      article {
+        grid-area: article;
+        background: #5C3317; 
+        padding: 10px;       
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: nav;
+        background: #5C3317;   
+        padding: 15px;      
+        text-align: center;
+        font-weight: bold;
+      }
+
+      a:link {
+        color: white;
+      } 
+
+      aside {
+        grid-area: aside;
+        background: #5C3317;  
+        padding: 10px;       
+        text-align: center;
+        font-weight: bold;
+      }
+
+      article:hover, nav a:hover, aside:hover {
+        background: #EBC79E;
+      }
+      
+      a:hover {
+        color: #5C3317;
+      }
+
+      a:visited {
+        color:white;
+      }
+      .menu:hover {
+        color: #5C3317;;
+      }
+      
+      .menu:visited:hover {
+        color: #5C3317;
+      }
+
+      .produto {
+        background: #A68064;
+        padding: 1rem;
+      }
+
+      .produto p {
+        min-height: 3rem;
+      }
+
+      #prod1 {
+        grid-area: prod1;
+      }
+
+      #prod2 {
+        grid-area: prod2;
+      }
+
+      #prod3 {
+        grid-area: prod3;
+      }
+
+      #prod4 {
+        grid-area: prod4;
+      }
+
+      #prod5 {
+        grid-area: prod5;
+      }
+
+      #prod6 {
+        grid-area: prod6;
+      }
+
+      #prod7 {
+        grid-area: prod7;
+      }
+
+      #prod8 {
+        grid-area: prod8;
+      }
+
+      #prod9 {
+        grid-area: prod9;
+      }
+
+      prod1, prod2, prod3 {
+          padding: 15px;
+      }     
+
+      prod4, prod5, prod6 {
+          padding: 10px;
+      }
+      
+      prod7, prod8, prod9 {
+          padding: 10px;
+      }
+
+      p{
+        font-size: 0.9rem;    
+        color: #5C3317;
+      }
+
+      p3{
+        font-size: 1.2rem;    
+        color: #EBC79E;
+        text-align: center;
+      }
+
+   
+      h1{
+        text-align: center;
+         height: 25vh ;
+         min-height: 300px;
+         display: flex;
+      }
+
+      #social {
+        text-align: center;
+        color: #EBC79E;
+        font-size: 1.2rem;
+        padding: 30px;
+      }
+
+      .fa-envelope {
+        color: navy;
+      }
+
+      .fa-whatsapp {
+        color: green;
+      }
+      
+      .fa-instagram {
+        color: #DD2A7B;
+      }
+      
+      div {
+        text-align: center;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      @font-face {
+        font-family: Lobster;
+        src: url(../fonts/Lobster/Lobster-Regular.ttf);
+     }
+
+     article a, aside a, nav a {
+       text-decoration: none;
+     }
+     
+     div1 {
+       font-size: 500px;
+     }
+
+     .botao {
+       font-family: Lobster;
+       font-size: 13px;
+       font-weight: bold;
+       padding: 10px;
+       text-decoration: none;
+       border-radius: 8px 5px;
+       opacity: 0.5;
+       transition: opacity 1s;
+       will-change: opacity;
+     }
+
+      .botao:hover {
+        opacity: 1;
+        color: white;
+     }
+
+     .botao:visited {
+       color: white;
+     }
+
+     .cor-botao {
+       background-color: rgb(8, 104, 8);
+     }
+
+     .botao:hover {
+       color: white;
+     }
+     
+     .cor-botao:active {
+       position: relative;
+       top: 2px;
+     }
+
+     #social-contato {
+        text-align: center;
+        color: #EBC79E;
+        font-size: 4rem;
+        padding: 30px;
+
+     }
+     .sobre {
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-rows: 35vh 10vh auto auto auto 3vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+          "header header header"
+          "nav nav nav"
+          "prod1 prod2 prod3"
+          "prod4 prod5 prod6"
+          "prod7 prod8 prod9"
+          "footer footer footer";     
+        font-family: Lobster, cursive;   
+        font-size: 20px;
+     }
+     
+     form {
+       text-align: center;
+       height:30%;
+       padding: 5px;
+       margin-top: -25px;
+     }
+     
+     input {
+       background: #A68064;
+       width: 45%;
+       height: 30px ;
+       border-radius: 10px 10px;
+     }
+
+     input::placeholder {
+       color: white;
+     }
+     .preço {
+       background: #A68064;
+       width: 15%;
+       height: 30px ;
+       border-radius: 10px 10px;
+     }
+
+     .preço::placeholder {
+       color: white;
+     }
+
+     .fa-search {
+       background-color: #A68064;
+       font-size: 20px;
+      }
+            
+     #submit-button {
+       height: 30%;
+       width: 4%;
+     }
+     
+     .fas {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px 10px;
+     }
+    
+    h2 {
+      font-size: 50px;
+      color: white;
+  }
+
+    p {
+      font-size: 20px;
+      color: white;
+  }
+  html{
+    background-color: #5C3317;
+  }
